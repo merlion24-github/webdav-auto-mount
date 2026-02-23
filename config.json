@@ -1,0 +1,35 @@
+{
+  "servers": [
+    {
+      "name": "DS-01",
+      "url": "http://192.168.2.56:5005",
+      "username": "wmq",
+      "password": "123456",
+      "mount_point": "/Users/merlion/Servers/DS-01",
+      "wake_on_lan": false,
+      "max_retries": 40,
+      "retry_interval": 3,
+      "protocol": "webdav",
+      "timeout": 120
+    },
+    {
+      "name": "DS-02",
+      "url": "http://192.168.2.57:5007",
+      "username": "wmq",
+      "password": "123456",
+      "mount_point": "/Users/merlion/Servers/DS-02",
+      "wake_on_lan": false,
+      "max_retries": 40,
+      "retry_interval": 3,
+      "protocol": "webdav",
+      "timeout": 120
+    }
+  ],
+  "global": {
+    "log_level": "info",
+    "log_file": "/Users/merlion/Library/Logs/WebDAV-Mount/mount_log_$(date +%Y-%m-%d_%H-%M-%S).txt",
+    "parallel_processing": true,
+    "notification": true,
+    "auto_start": true
+  }
+}
