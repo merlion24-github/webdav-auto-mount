@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.rclone.automount-webdav</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/merlion/workspace/Rclone/mount_webdav.sh</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <false/>
+    <key>StartInterval</key>
+    <integer>3600</integer>
+    <key>StandardOutPath</key>
+    <string>/Users/merlion/Library/Logs/WebDAV-Mount/launchagent_stdout.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/merlion/Library/Logs/WebDAV-Mount/launchagent_stderr.log</string>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+        <key>HOME</key>
+        <string>/Users/merlion</string>
+    </dict>
+    <key>WorkingDirectory</key>
+    <string>/Users/merlion/workspace/Rclone</string>
+</dict>
+</plist>
